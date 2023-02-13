@@ -1,3 +1,3 @@
-//Programmer: Kyle Rocco
+//Programming Team: Kyle and Ranen
 //Date: 2.6.23
-//Project: Sphero Bolt
+//Project: Maze Com
