@@ -20,3 +20,19 @@ async function CheckpointBLUE() {
   setMainLed({ r: 0, g: 0, b: 255 })
 }
 
+
+/**
+ *
+*/
+async function CheckpointNoise_1(){
+  await roll(90, 64, 1.5);
+  await delay(2);
+  await roll(180, 59, 1);
+  await spin(42.5, 2.5);
+  await Sound.Animal.Monkey.play();
+}
+
+async function startProgram() {
+await CheckpointBLUE(); // Calls CheckpointBLUE
+await CheckpointNoise_1();
+}
