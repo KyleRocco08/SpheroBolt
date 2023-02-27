@@ -83,3 +83,29 @@ async function CheckpointNoise_3() {
     await delay(2);
 }
 
+
+
+
+/**
+ *
+*/
+async function CheckpointPURPLE() {
+    await roll(0, 60, 1.5);
+    setMainLed({ r: 40, g: 0, b: 255})
+    await delay(2);
+    await scrollMatrixText('FINISH', { r: 255, g: 255, b: 255 }, 30, true);
+}
+
+
+/**
+ *
+*/
+async function startProgram() {
+    await CheckpointBLUE(); // Calls CheckpointBLUE
+    await CheckpointNoise_1();
+    await CheckpointRED();
+    await CheckpointNoise_2();
+    await CheckpointGREEN();
+    await CheckpointNoise_3();
+    await CheckpointPURPLE();
+}
