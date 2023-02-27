@@ -54,3 +54,17 @@ async function CheckpointNoise_2() {
     await Sound.Animal.play();
 }
 
+
+
+/**
+ *
+*/
+async function CheckpointGREEN() {
+    await delay(1.5);
+    await roll(180, 43.5, 1);
+    await delay(1.5);
+    setMainLed({ r: 0, g: 255, b: 0})
+    await roll(89.5, 29 , 1.1);
+
+}
+
