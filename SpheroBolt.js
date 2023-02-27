@@ -68,3 +68,18 @@ async function CheckpointGREEN() {
 
 }
 
+
+
+/**
+ *
+*/
+async function CheckpointNoise_3() {
+    await roll(89.5, 40, 1.1);
+    await delay(2);
+    await roll(0, 45, 1.5);
+    await delay(2);
+    await roll(315, 46, 1.25);
+    await Sound.Animal.play();
+    await delay(2);
+}
+
